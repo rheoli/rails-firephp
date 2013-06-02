@@ -2,37 +2,5 @@
   FirePHP for Rails
 #####################
 
-FirePHP for Rails can be used for easy print out some variables with Rails and Passenger
-without visiting the log-files.
-
-Requirements:
- - Ruby (Tested 1.8.6)
- - Rails (Tested 2.1.1)
- - Mozilla Firefox (Tested 3.0.1)
- - Firebug (http://getfirebug.com/)
- - FirePHP (http://www.firephp.org/)
-
-Installing:
- $ (sudo) gem install rails-firephp
-
-Setup:
- add the following line in config/environement.rb (somewere by the other config.gem's):
-
-  config.gem "rails-firephp", :lib => "firephp/firephp_filter"
-
- add an after_filter in app/controllers/application.rb:
-
-  after_filter :firephp_filter
-
-Using:
- the following commands can now be used:
-
-  firephp_headers :
-   sends the header variables to FirePHP
-
-  firephp_params :
-   send the params to FirePHP
-
-  firephp(text|obj,"WARN"|"INFO"|"ERROR"|Default:"LOG") :
-   send the text or the obj to FirePHP
+This gem is deprecated.
 
